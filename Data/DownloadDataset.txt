@@ -1,0 +1,2 @@
+Segment data: https://drive.google.com/file/d/1uce2k-iDb8Kd1tAYrvQlX7Hd1hsU-xno/view?usp=sharing
+MIT-BIH: https://storage.googleapis.com/mitdb-1.0.0.physionet.org/mit-bih-arrhythmia-database-1.0.0.zip
