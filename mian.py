@@ -9,7 +9,7 @@ mit-bih: https://storage.googleapis.com/mitdb-1.0.0.physionet.org/mit-bih-arrhyt
 Download the Data, which is segment by an 1800 length of the sliding window, and the interval is 100: 
 https://drive.google.com/file/d/1uce2k-iDb8Kd1tAYrvQlX7Hd1hsU-xno/view?usp=sharing
 
-Put the download data into the Data folder.
+Put the download datas into the "Data" folder.
 
 """
 

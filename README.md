@@ -23,6 +23,8 @@ pip install biosppy
 
 which is a package for ECG signal processing. 
 
+You can setup the environment using setup.sh
+
 Make sure that the environment is `python 3.7`
 
 ## Dataset
