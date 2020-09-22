@@ -106,11 +106,13 @@ There are 5 index you can choose when you run `main.py`.
 * Input: Segment dataset (input size is 1800) (The inout of origninal paper is 3600 )
 * Output: Testing result and report
 
-##### CNN-LSTM
+##### CNN-LSTM [3]
 
 * You can type the number 10 to train and test GRU network. 
 * Input: Segment dataset (input size is 1000)
 * Output: Testing result and report
+
+##### Automatic diagnosis of the 12-lead ECG using a deep neural network [4]
 
 ## Environment
 
@@ -133,3 +135,5 @@ PyWavelets == 1.1.1
 **[2]**  O. Yldrm, P. P  lawiak, R.-S. Tan, and U. R. Acharya, \Arrhythmia detection using deep convolu- tional neural network with long duration ecg signals," Computers in biology and medicine, vol. 102, pp. 411{420, 2018. 
 
 **[3]** S. L. Oh, E. Y. Ng, R. San Tan, and U. R. Acharya, \Automated diagnosis of arrhythmia using combination of cnn and lstm techniques with variable length heart b eats," Computers in biology and medicine, vol. 102, pp. 278{287, 2018
+
+**[4]** A. H. Ribeiro et al., "Automatic diagnosis of the 12-lead ECG using a deep neural network," Nature communications, vol. 11, no. 1, pp. 1-9, 2020. https://doi.org/10.1038/s41467-020-15432-4
