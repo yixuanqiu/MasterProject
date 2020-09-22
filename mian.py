@@ -1,7 +1,7 @@
 from scr import CNN_Net, util, Train_Net, Test, LSTM_Net, \
     GRU_Net, GRU_Attention, CNN_16layers, \
     CNN_11layers, CNN_LSTM, Preprocessing, \
-    SVM, Xgboost
+    SVM, Xgboost, Nature_ResNet
 
 """
 Before run the function, you need download the dataset and rename the folder's name as mitbd. 
@@ -139,9 +139,22 @@ def main():
                                                                                                    num_workers=7,
                                                                                                    gpu=use_gpu)
         cnn, optimizer, criterion = util.buildCNN(CNN_LSTM.CNN_LSTM, 0.0001, use_gpu)
-        print('Training Network....')
+        print('Training Network...')
         Train_Net.Train(150, cnn, use_gpu, criterion, optimizer, train_loader, test_loader)
         Test.evaluation(cnn, validate_loader)
+
+    if num == 11:
+        train_loader, test_loader, validate_loader, test_data, test_label = util.ConstructSegData(Train_Path, Test_Path,
+                                                                                                  Validate_Path,
+                                                                                                  batch_size=64,
+                                                                                                  num_workers=7,
+                                                                                                  z_scale=False,
+                                                                                                  gpu=use_gpu)
+        cnn, optimizer, criterion = util.buildCNN(Nature_ResNet.ResNet, 0.0001, use_gpu)
+        print('Training Network...')
+        Train_Net.Train(5, cnn, use_gpu, criterion, optimizer,train_loader, test_loader)
+        Test.evaluation(cnn, validate_loader)
+
 
 
 main()

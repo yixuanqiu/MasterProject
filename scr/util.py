@@ -291,7 +291,8 @@ def GetMethodIndex():
           8. 11 layers CNN Network \n \
           9. 16 Lyaers CNN Network \n \
           10 .CNN-LSTM Network \n \
-              "))
+          11. Nature un-dimensional ResNet\n \
+                    "))
     return num
 
 
